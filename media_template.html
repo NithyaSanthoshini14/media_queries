@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            overflow-x: hidden;
+        }
+        nav{
+            font-size: 23px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin:20px;
+            top: 50px;
+        }
+        a{
+           font-size: 20px;
+           text-decoration: none;
+           float:right;
+           font-weight: 300;
+           
+         }
+         #d1{
+            width:100%;
+            height:50%;
+            display:grid;
+            grid-template-areas: 
+            "img1 img2"
+            "img3 img4"
+            "img5 img4"
+        }
+        .i1{
+            grid-area:img1;
+        }
+        .i2{
+            grid-area: img2;
+        }
+        .i3{
+            grid-area:img3;
+        }
+        .i4{
+            grid-area:img4;
+        }
+        .i5{
+            grid-area:img5;
+        }
+        .item{
+            width:100%;
+            height:100%;
+        }
+        .t1{
+            width:900px;
+        }
+        span{
+            position:relative;
+            left:1000px;
+        }
+      .center{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:30px;
+       }
+       .c1{
+        margin:auto;
+        width:60%
+        }
+        #d3{
+            text-align: center;
+            color:red;
+            font-size:18px;
+        }
+        .d4{
+            text-align:center;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .t1{
+            padding:10px;
+            border: 2px solid #ccc;
+            display: inline-block;
+            border-radius:4px;
+            margin:auto;
+        } 
+        @media screen and (min-width:600px) and (max-width:1300px){
+            html,body{
+                overflow-x: hidden;
+                margin: 0;
+                padding:0;
+            }
+            a{
+                float:right;
+            }
+         #d1{
+            width:100%;
+            height:50%;
+            display:grid;
+            grid-template-areas: 
+            "img1 img2"
+            "img3 img4"
+            "img5 img4"
+        }
+        .i1{
+            grid-area:img1;
+        }
+        .i2{
+            grid-area: img2;
+        }
+        .i3{
+            grid-area:img3;
+        }
+        .i4{
+            grid-area:img4;
+        }
+        .i5{
+            grid-area:img5;
+        }
+        .item{
+            width:100%;
+            height:100%;
+        }
+        .t1{
+            width:900px;
+        }
+        span{
+            position:relative;
+            left:1000px;
+        }
+    }
+    @media screen and (max-width:600px){
+        body{
+            overflow-x: hidden;
+        }
+            #d1{
+                display:flex;
+                flex-direction: column;
+            }
+            .d2{
+                margin:20px;
+            }
+            .c1{
+                text-align: center;
+            }
+            .t1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:300px;
+            }
+            span{
+                position: relative;
+                left:300px;
+            }
+            .d4{
+                display:grid;
+                justify-content: center;
+                align-items: center;
+                margin:30px;
+            }
+        }
+</style>
+</head>
+<body>
+    <nav>MY ART
+       <a href="">About</a>
+    </nav>
+    <div id="d1">
+        <img src="./streetart.jpg" class="item i1">
+        <img src="./streetart2.jpg" class="item i2">
+        <img src="./streetart3.jpg" class="item i3">
+        <img src="./streetart4.jpg" class="item i4">
+        <img src="./streetart5.jpg" class="item i5">
+    </div>
+        <div class="d2">
+        <h2 style="text-align:center">About</h2>
+        <img src="./boy.jpg" height="300" width="300" class="center">
+        <p class="c1">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+        <p id="d3">Do not hesitate to contact me!</p>
+        <div class="d4">
+            <label for="Name">Name</label>
+            <input type="text" id="Name"  size="120" class="t1">
+            <label for="email">Email</label>
+            <input type="email" id="email" size="120"  class="t1">
+            <label for="msg">Message</label>
+            <input type="text" id="msg" size="120" class="t1">
+            <button  class="t1" style="background-color:rgb(67, 65, 65); color:white; cursor: pointer; margin:10px; size:120;">Send</button>
+        </div>
+        <p style="text-align:center">Powered by <a href="https://www.w3schools.com/w3css/default.asp"> w3.css</a></p>
+    </div>
+</body>
+</html>
